@@ -1,0 +1,9 @@
+brokers: "192.168.1.107:9876"
+producerGroupName: order_produce_srv
+consumerGroupName: order_common_consumer_srv
+transactionConsumerGroupName: order_consumer_srv
+commonGroupName: order_common_confirmOrder_consumer_srv
+transactionTopic: lottery_order_create_topic
+rollbackTopic: lottery_order_rollback_topic
+createOrderTopic: lottery_order_create_topic
+orderConfirmTopic: lottery_order_confirm_topic

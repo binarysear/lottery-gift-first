@@ -1,0 +1,7 @@
+time="2024-09-02 07:17:06" level=info msg="connect to redis 1" func=gift/database/redis.createRedisClient file="/app/database/redis/db_connection.go:25"
+time="2024-09-02 07:17:06" level=info msg="connect to mysql db gift" func=gift/database/mysql.createMysqlDB file="/app/database/mysql/db_connection.go:42"
+time="2024-09-02 07:17:06" level=info msg="clear LotteryOrders success" func=main.Init file="/app/main.go:31"
+time="2024-09-02 07:17:06" level=info msg="get mq brokers: 192.168.1.107:9876" func="gift/mq.(*RocketmqManager).InitCommonMQProducer" file="/app/mq/rocketmqManager.go:46"
+time="2024-09-02 07:17:06" level=info msg="producerCommonMQ: &{DEFAULT_PRODUCER 0xc0003cc000 0 {{DEFAULT_PRODUCER [] 0xc0000f8dc0 172.18.0.3 DEFAULT false  false 3 [] {  }  <nil> 0x1662e60} 0xc000011560 3000000000 4 TBW102 0xc000623dd0 4096 5 <nil>} {{0 0} {[] {} <nil>} map[] 0} 0xc00017c300 <nil> {0 {0 0}} {0 {0 0}}},err: <nil>" func="gift/mq.(*RocketmqManager).InitCommonMQProducer" file="/app/mq/rocketmqManager.go:48"
+time="2024-09-02 07:17:06" level=info msg="mq brokers 192.168.1.107:9876,groupName order_consumer_srv,topic: lottery_order_create_topic" func="gift/mq.(*RocketmqManager).InitTransactionMQConsumer" file="/app/mq/rocketmqManager.go:183"
+time="2024-09-02 07:17:06" level=info msg="mq c &{0xc00066ee00 0 0 {map[]} 0xcec880 map[] <nil> 0xc000371f20 0xc00017cc00 {0 {0 0}} map[]}" func="gift/mq.(*RocketmqManager).InitTransactionMQConsumer" file="/app/mq/rocketmqManager.go:188"
